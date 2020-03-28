@@ -1,5 +1,16 @@
-$header-top-link-color: rgb(110, 110, 110);
+//
+// Header colors:
+//
+$main-grey-link-color: rgb(110, 110, 110);
+$main-red-link-color: rgb(198, 3, 4);
 $header-top-wrapper-background: rgb(238,238,238);
-$header-top-link_active: red;
 $header-mid-wrapper-background: rgb(198, 3, 4);
-$header-mid-text-color: rgb(255, 255, 255)
+$header-mid-text-color: rgb(255, 255, 255);
+
+//
+//Main content colors:
+//
+$content-border: rgb(217,217,217);
+$text-grey-color: rgb(110, 110, 110);
+$lighter-grey-color: rgb(226,226,226);
+$text-links-color: rgb(198, 3, 4);

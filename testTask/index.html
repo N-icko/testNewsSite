@@ -1,135 +1,417 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="./assets/style/style.css" type="text/css" rel="stylesheet" />
-	<script
-			src="https://code.jquery.com/jquery-3.4.1.js"
-			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			crossorigin="anonymous"
-	></script>
-	<script
-			src="https://kit.fontawesome.com/16e54ff964.js"
-			crossorigin="anonymous"
-	></script>
-	<title>Test Task</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="./assets/style/style.css" rel="stylesheet" type="text/css"/>
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            src="https://code.jquery.com/jquery-3.4.1.js"
+    ></script>
+    <script
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/16e54ff964.js"
+    ></script>
+    <title>Test Task</title>
 </head>
 
 <body>
 <header>
-	<div class="header-top-wrapper">
-		<div class="header__header-top-nav">
-			<ul class="header-top-nav__list">
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">рус</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">укр</a>
-				</li>
-			</ul>
-			<ul class="header-top-nav__list">
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">журнал</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">видео</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">фото</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">популярные</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">лонгриды</a>
-				</li>
-				<li class="header-top-nav__list-item">
-					<a class="header-top-nav__list-item-link" href="#">спецпроекты</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="header-mid-wrapper">
-		<div class="header-mid__container">
-			<div class="weather-block">
-				<a class="weather__city-list" href="#"
-				>Ивано-Франковск <i class="fas fa-caret-down"></i>
-				</a>
-				<span class="weather__icon"><i class="far fa-sun"></i></span>
-				<span class="weather__temp">+10 &#176;</span>
-			</div>
-			<div class="exchange-block">
-				<a class="exchange-list" href="#"
-				>USD <i class="fas fa-caret-down"></i>
-				</a>
-				<span class="exchange-symbol">
+    <div class="header-top-wrapper">
+        <div class="header__header-top-nav">
+            <ul class="header-top-nav__list">
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">рус</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">укр</a>
+                </li>
+            </ul>
+            <ul class="header-top-nav__list">
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">журнал</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">видео</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">фото</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">популярные</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">лонгриды</a>
+                </li>
+                <li class="header-top-nav__list-item">
+                    <a class="header-top-nav__list-item-link" href="#">спецпроекты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-mid-wrapper">
+        <div class="header-mid__container">
+            <div class="weather-block">
+                <a class="weather__city-list" href="#"
+                >Ивано-Франковск <i class="fas fa-caret-down"></i>
+                </a>
+                <span class="weather__icon"><i class="far fa-sun"></i></span>
+                <span class="weather__temp">+10 &#176;</span>
+            </div>
+            <div class="exchange-block">
+                <a class="exchange-list" href="#"
+                >USD <i class="fas fa-caret-down"></i>
+                </a>
+                <span class="exchange-symbol">
               <i class="fas fa-arrow-down"></i>
             </span>
-				<span class="exchange-value">30.000</span>
-			</div>
-			<div class="logo-block">
-				<h3>КорреспонденТ.<i>net</i></h3>
-			</div>
-			<div class="search-block">
-				<a class="search__button" href="#">поиск</a>
-				<i class="fas fa-search"></i>
-			</div>
-			<div class="auth-block">
-				<a class="auth__button" href="#">авторизация</a>
-				<i class="fas fa-user"></i>
-			</div>
-		</div>
-	</div>
-	<div class="header-low-wrapper">
-		<div class="header-low__container">
-			<ul class="low__nav">
-				<li class="nav__item">
-					<a class="nav__link" href="#">главная</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">украина</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">город</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">мир</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">бизнес</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">я-корреспондент</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">спорт</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">lifestyle</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">шоу-биз</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#">наука</a>
-				</li>
-				<li class="nav__dropdown">
-					<a class="nav__link" href="#"
-					>все разделы <i class="fas fa-caret-down"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="header-sub-wrapper">
-		<div class="header-sub__container">
-			<a class="sub__all-news" href="#">все новости раздела</a>
-			<a class="sub__fav-news" href="#">россия</a>
-		</div>
-	</div>
+                <span class="exchange-value">30.000</span>
+            </div>
+            <div class="logo-block">
+                <h3>КорреспонденТ.<i>net</i></h3>
+            </div>
+            <div class="search-block">
+                <a class="search__button" href="#">поиск</a>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="auth-block">
+                <a class="auth__button" href="#">авторизация</a>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </div>
+    <div class="header-low-wrapper">
+        <div class="header-low__container">
+            <ul class="low__nav">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">украина</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">город</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">мир</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">бизнес</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">я-корреспондент</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">спорт</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">lifestyle</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">шоу-биз</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">наука</a>
+                </li>
+                <li class="nav__dropdown">
+                    <a class="nav__link" href="#"
+                    >все разделы <i class="fas fa-caret-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-sub-wrapper">
+        <div class="header-sub__container">
+            <a class="sub__all-news" href="#">все новости раздела</a>
+            <a class="sub__fav-news" href="#">россия</a>
+        </div>
+    </div>
 </header>
+<div class="content-wrapper">
+    <div class="content-container">
+        <section class="special-news">
+            <div class="special-news__container">
+                <span class="special-news__title">спецтема:</span>
+                <a class="special-news__link" href="#"
+                >карантин в Киеве и Украине >></a
+                >
+            </div>
+            <div class="special-news__dropdown">
+                <a class="special-news__dropdown-link" href="#"
+                >Все темы
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </div>
+        </section>
+        <section class="main-news">
+            <div class="main-news__container">
+                <div class="main-news__header">
+                    <h1 class="header__title">
+                        Россия стала мировым лидером в аграрной индустрии, вытеснив
+                        Китай. Как каждый россиянин может
+                        <a class="text-link" href="#">заработать</a> на стремительном
+                        росте промышленности со своего
+                        <a class="text-link" href="#">смартфона?</a>
+                    </h1>
+                    <p class="header__date">
+                        Корреспондент.net, 17 февраля 2020, 15:30
+                    </p>
+                    <div class="main-news__view-info">
+                        <div class="fb-social-container">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <span class="fb-counter-container">
+                    <span class="fb-counter">3</span>
+                  </span>
+                        </div>
+                        <div class="twttr-social-container">
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <span class="twttr-counter-container">
+                    <span class="twttr-counter">14</span>
+                  </span>
+                        </div>
+                        <a class="translate-to-ua" href="#"
+                        >читать новость на украинском</a
+                        >
+                        <div class="views-counter">
+                            <i class="fas fa-eye"></i>
+                            <span class="view-counter">100500</span>
+                        </div>
+                        <div class="comments-counter">
+                            <i class="fas fa-comment-alt"></i>
+                            <span class="comm-counter">520</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-block">
+                    <img
+                            alt="photo"
+                            class="main-photo"
+                            src="./assets/img/newphoto.png"
+                    />
+                </div>
+                <div class="news-block">
+                    <h5 class="news-subtitle">
+                        Как Россия вытеснила Китай на мировом рынке
+                    </h5>
+                    <p class="news-text">
+                        Сейчас Китай, как бывший мировой лидер в аграрной
+                        промышленности, переживает непростые времена. Из-за эпидемии
+                        коронавируса люди со всех стран мира отказываются покупать
+                        китайские товары, боясь заразиться вирусом. Ситуация настолько
+                        сложная, что на данный момент Китай не может покрыть даже
+                        внутренние вопросы в пищевой и сельскохозяйственной
+                        промышленности. Сложившаяся ситуация оказалась благоприятной для
+                        экономики России. Теперь РФ не только заняла часть внутреннего
+                        рынка Китая, но и вытеснила его на мировой арене в сфере
+                        аграрной промышленности. Данная ситуация позволяет простым
+                        россиянам
+                        <a class="text-link" href="#" target="_blank"
+                        >получать пассивный доход от государства</a
+                        >. Как именно? Наши журналисты подробно изучили этот вопрос…
+                        <br/>
+                        <br/>
+                    </p>
+                    <h5 class="news-subtitle">
+                        Почему аграрная промышленность России стала “лакомым кусочком”
+                        <a class="text-link" href="#" target="_blank"
+                        >для инвестиций?</a
+                        >
+                    </h5>
+                    <p class="news-text">
+                        Из-за повышенного спроса мирового рынка на российские товары,
+                        ожидается масштабное
+                        <a class="text-link" href="#" target="_blank">инвестирование</a>
+                        в пищевую и сельскохозяйственную промышленность РФ и обучение
+                        нового персонала. Все это укрепляет позиции
+                        <a class="text-link" href="#" target="_blank">акций</a> сельхоз
+                        сегмента РФ и экономики РФ в целом. По причине ускоренного
+                        масштабирования производства российских товаров с января 2020
+                        года запущен
+                        <a class="text-link" href="#" target="_blank"
+                        >проект “АграрКапитал”</a
+                        >
+                        и строительство 76 заводов для расширения аграрной
+                        промышленности РФ
+                        <br/>
+                        <br/>
+                    </p>
+                    <h5 class="news-subtitle">Что такое “АграрКапитал”?</h5>
+                    <p class="news-text">
+                        “АграрКапитал” - это специальная
+                        <a class="text-link" href="#" target="_blank"
+                        >онлайн-платформа для торговли акциями российских промышленных
+                            заводов</a
+                        >. Пользователи программы получают возможность приобрести
+                        желаемое количество
+                        <a class="text-link" href="#" target="_blank"
+                        >акций и запустить автоматическую торговлю на мировом рынке</a
+                        >. По причине того, что мировые крупные инвесторы уже видят
+                        выгоду в российской аграрной промышленности,
+                        <a class="text-link" href="#" target="_blank">цены на акции</a>
+                        растут с большой скоростью, несмотря на то, что строительство
+                        большинства заводов только началось.
+                        <br/>
+                        <br/>
+                    </p>
+                    <h5 class="news-subtitle">
+                        Как россияне начали
+                        <a class="text-link" href="#" target="_blank"
+                        >зарабатывать через “АграрКапитал”?</a
+                        >
+                    </h5>
+                    <p class="news-text">
+                        Сейчас
+                        <a class="text-link" href="#" target="_blank"
+                        >проект “АграрКапитал” открыт для инвестиций</a
+                        >
+                        всех россиян. Таким образом,
+                        <a class="text-link" href="#" target="_blank"
+                        >акции аграрной промышленности доступны для</a
+                        >
+                        торгов жителей России. Но в виду того, что как только заводы
+                        будут построены,
+                        <a class="text-link" href="#" target="_blank"
+                        >акции захотят выкупить монополисты, цены на акции вырастут в
+                            4-5 раз</a
+                        >. Поэтому данное мероприятие
+                        <a class="text-link" href="#" target="_blank">гарантированно</a>
+                        дает возможность россиянам
+                        <a class="text-link" href="#" target="_blank"
+                        >умножить имеющийся капитал.</a
+                        >
+                        <br/>
+                        <br/>
+                    </p>
+                    <img
+                            alt="pobeditel"
+                            class="news-photo"
+                            src="./assets/img/winnerphoto.jpg"
+                    />
+                    <p class="news-text">
+                        <i
+                        >Ольга Вакарева, учительница математики,
+                            <a class="text-link" href="#" target="_blank"
+                            >инвестор в проект “АграрКапитал”</a
+                            ></i
+                        >
+                    </p>
+                    <p class="news-text">
+                        Курс на
+                        <a class="text-link" href="#" target="_blank"
+                        >акции проекта “АграрКапитал”</a
+                        >
+                        уже начал расти, начиная со 2 февраля, и россияне уже
+                        <a class="text-link" href="#" target="_blank">зарабатывают</a>
+                        на этом. Однако,
+                        <a class="text-link" href="#" target="_blank">акции</a>
+                        еще можно приобрести по
+                        <a class="text-link" href="#" target="_blank">цене</a>,
+                        доступной россиянину со
+                        <a class="text-link" href="#" target="_blank"
+                        >среднестатической зарплатой</a
+                        >.
+                    </p>
+                    <h5 class="news-subtitle">
+                        Преимущества многообещающего
+                        <a class="text-link" href="#" target="_blank"
+                        >проекта “АграрКапитал”</a
+                        >
+                    </h5>
+                    <p class="news-text">
+                        1. <b>Доступен каждому. </b>Стать
+                        <a class="text-link" href="#" target="_blank">инвестором</a>
+                        государственной аграрной промышленности может любой гражданин
+                        России. Для этого нужно всего лишь пройти простую регистрацию.
+                        <a class="text-link" href="#" target="_blank"
+                        >Сумма инвестиции</a
+                        >
+                        может быть небольшой и даже равна сумме обыкновенной
+                        микроволновки. <br/>
+                    </p>
+                    <p class="news-text">
+                        2. <b>Простота. </b>Участники проекта
+                        <a class="text-link" href="#" target="_blank">“АграрКапитал”</a>
+                        разработали удобное приложение для
+                        <a class="text-link" href="#" target="_blank"
+                        >торгов аграрными акциями</a
+                        >, интуитивно понятное каждому — не имея знаний в области
+                        <a class="text-link" href="#" target="_blank"
+                        >экономики и торговли акциями</a
+                        >, человек сможете обучиться менее чем за 10 минут и
+                        <u>
+                            начать
+                            <a class="text-link" href="#" target="_blank">
+                                зарабатывать.
+                            </a>
+                        </u>
+                        <br/>
+                    </p>
+                    <p class="news-text">
+                        3. <b>Удобство. </b><u>Алгоритм все сделает за</u> человека —
+                        программе не нужно помогать или делать какие-то специальные
+                        действия.
+                        <br/>
+                    </p>
+                    <p class="news-text">
+                        4. <b>Отсутствие рисков.</b
+                    ><a class="text-link" href="#" target="_blank"
+                    > 94% сделок закрываются в пользу владельца акциями
+                        “АграрКапитал”</a
+                    >
+                        из-за нынешней экономической ситуации и заинтересованности
+                        иностранных
+                        <a class="text-link" href="#" target="_blank"
+                        >инвесторов скупать российские аграрные акции.</a
+                        >
+                        <br/>
+                    </p>
+                    <p class="news-text">
+                        5. <b>Надежность.</b
+                    ><a class="text-link" href="#" target="_blank"
+                    > Платформа “АграрКапитал”</a
+                    >
+                        является государственной и работает при поддержке правительства,
+                        поэтому ни один участник не рискует ничем.
+                    </p>
+                  <div class="news-how-to">
+                    <b><span>Как присоединиться к проекту “АграрКапитал”</span></b>
+                      <ul class="how-to-list">
+                        <li class="list-item">1. <u><a class="text-link" href="#" target="_blank">Перейдите по этой ссылке</a></u> на <a class="text-link" href="#" target="_blank">официальный
+                          сайт платформы “АграрКапитал”.</a></li>
+                        <li class="list-item">2. <a class="text-link" href="#" target="_blank">Зарегистрируйтесь <u>на сайте</u></a>, внимательно и правильно заполнив все поля формы.</li>
+                        <li class="list-item">3. Дождитесь звонка от менеджера <a class="text-link" href="#" target="_blank">платформы</a> на ваш мобильный номер телефона и подтвердите
+                          <u>регистрацию</u>.</li>
+                        <li class="list-item">4. Выберите желаемую сумму и получите первую выплату уже к вечеру этого дня.</li>
+                      </ul>
+                      <a class="submit-button" href="#" target="_blank">Подать заявку</a>
+                    </div>
+                  <div class="tags-container">
+                    <div class="tags-block">
+                      <span>тэги:</span>
+                      <a class="tags-link" href="#" target="_blank">успех</a>,
+                      <a class="tags-link" href="#" target="_blank">акции</a>,
+                      <a class="tags-link" href="#" target="_blank">тэг</a>,
+                      <a class="tags-link" href="#" target="_blank">пенсия</a>,
+                      <a class="tags-link" href="#" target="_blank">какой-то тег</a>
+                    </div>
+                    <div class="error-text">
+                      <i>Если вы заметили ошибку, выделите необходимый текст и нажмите Ctrl+Enter,
+                      чтобы сообщить об этом редакции.</i>
+                    </div>
+                  </div>
+                </div>
+              <div class="some-news__wrapper">
+                <a class="some-news-link" href="#" target="_blank">читайте также >></a>
+              </div>
 
+
+            </div>
+            <div class="aside-news__container"></div>
+        </section>
+    </div>
+</div>
 <script src="./assets/js/index.js"></script>
 </body>
 </html>

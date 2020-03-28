@@ -7,192 +7,494 @@
   padding: 0;
 
   a {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
   }
 }
 
 body {
-  font-family: "Open Sans Condensed", Arial, sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: Bold;
 }
 
-.header-top-wrapper {
-  width: 100%;
-  background-color: $header-top-wrapper-background;
+header {
+  .header-top-wrapper {
+    width: 100%;
+    background-color: $header-top-wrapper-background;
 
-  .header__header-top-nav {
-	height: 30px;
-	max-width: 968px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
+    .header__header-top-nav {
+      height: 30px;
+      max-width: 968px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
 
-	.header-top-nav__list {
-	  list-style: none;
-	  display: flex;
+      .header-top-nav__list {
+        list-style: none;
+        display: flex;
 
-	  .header-top-nav__list-item {
-		margin-right: 15px;
-		text-transform: uppercase;
-		font-size: 0.75rem;
+        .header-top-nav__list-item {
+          margin-right: 15px;
+          text-transform: uppercase;
+          font-size: 0.75rem;
 
-		.header-top-nav__list-item-link {
-		  text-decoration: none;
-		  color: $header-top-link-color;
-		}
+          .header-top-nav__list-item-link {
+            text-decoration: none;
+            color: $main-grey-link-color;
+          }
 
-		.active-header-link {
-		  color: $header-top-link_active;
-		}
-	  }
-	}
+          .active-header-link {
+            color: $main-red-link-color;
+          }
+        }
+      }
+    }
+  }
+
+  .header-mid-wrapper {
+    width: 100%;
+    background-color: $header-mid-wrapper-background;
+    height: 70px;
+
+    .header-mid__container {
+      max-width: 968px;
+      height: 70px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 20% 10% 40% 15% 15%;
+      align-content: center;
+      align-items: center;
+      font-size: 0.6875rem;
+      text-align: center;
+
+      .weather-block {
+        text-transform: uppercase;
+
+        .weather__city-list {
+          .fa-caret-down {
+            color: white;
+          }
+        }
+
+        .weather__icon {
+          font-size: 16px;
+          color: white;
+        }
+
+        .weather__temp {
+          color: white;
+        }
+      }
+
+      .exchange-block {
+        text-transform: uppercase;
+
+        .exchange-list {
+          .fa-caret-down {
+            color: white;
+          }
+        }
+
+        .exchange-symbol {
+          .fa-arrow-down {
+            color: white;
+          }
+        }
+
+        .exchange-value {
+          font-size: 14px;
+          color: white;
+        }
+      }
+
+      .logo-block {
+        font-size: 1.75rem;
+        color: white;
+      }
+
+      .search-block {
+        text-transform: uppercase;
+        text-align: right;
+
+        .fa-search {
+          margin-left: 5px;
+          color: white;
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      .auth-block {
+        text-transform: uppercase;
+
+        .fa-user {
+          color: white;
+          margin-left: 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .header-low-wrapper {
+    width: 100%;
+    background-color: $header-top-wrapper-background;
+    height: 35px;
+
+    .header-low__container {
+      max-width: 968px;
+      min-width: 917px;
+      margin: 0 auto;
+      font-size: 14px;
+
+      .low__nav {
+        text-transform: uppercase;
+        color: $main-grey-link-color;
+        list-style: none;
+        line-height: 35px;
+        letter-spacing: -0.5px;
+
+        .nav__item {
+          display: block;
+          float: left;
+          padding: 0 8px;
+          border-right: #fcfcfc 1px solid;
+          border-left: #d1d1d1 1px solid;
+
+          .nav__link {
+            text-transform: uppercase;
+            color: $main-grey-link-color;
+          }
+        }
+
+        .nav__dropdown > .nav__link {
+          float: right;
+          color: $main-grey-link-color !important;
+        }
+      }
+    }
+  }
+
+  .header-sub-wrapper {
+    width: 100%;
+    height: 30px;
+
+    .header-sub__container {
+      max-width: 968px;
+      margin: 0 auto;
+      font-size: 0.6875rem;
+      line-height: 30px;
+      text-transform: uppercase;
+
+      .sub__all-news {
+        color: $main-red-link-color;
+        margin-left: 8px;
+      }
+
+      .sub__fav-news {
+        color: $main-grey-link-color;
+        margin-left: 10px;
+      }
+    }
   }
 }
 
-.header-mid-wrapper {
+.content-wrapper {
   width: 100%;
-  background-color: $header-mid-wrapper-background;
-  height: 70px;
+  border-top: 1px solid $content-border;
 
-  .header-mid__container {
-	max-width: 968px;
-	height: 70px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 20% 10% 40% 15% 15%;
-	align-content: center;
-	align-items: center;
-	font-size: 0.6875rem;
-	text-align: center;
+  .content-container {
+    max-width: 940px;
+    margin: 0 auto;
+    //height: 1500px;
+    padding-bottom: 10px;
 
-	.weather-block {
-	  text-transform: uppercase;
+    .special-news {
+      height: 30px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $content-border;
+      box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.4);
 
-	  .weather__city-list {
-		.fa-caret-down {
-		  color: white;
-		}
-	  }
+      .special-news__container {
+        float: left;
+        width: 80%;
+        line-height: 30px;
+        font-size: 0.875rem;
 
-	  .weather__icon {
-		font-size: 16px;
-		color: white;
-	  }
+        .special-news__title {
+          color: $main-grey-link-color;
+        }
 
-	  .weather__temp {
-		color: white;
-	  }
-	}
+        .special-news__link {
+          color: $main-red-link-color;
+        }
+      }
 
-	.exchange-block {
-	  text-transform: uppercase;
+      .special-news__dropdown {
+        float: right;
+        width: 20%;
+        line-height: 30px;
+        font-size: 0.6875rem;
+        text-align: right;
 
-	  .exchange-list {
-		.fa-caret-down {
-		  color: white;
-		}
-	  }
+        .special-news__dropdown-link {
+          color: $main-grey-link-color;
+        }
+      }
+    }
 
-	  .exchange-symbol {
-		.fa-arrow-down {
-		  color: white;
-		}
-	  }
+    .main-news {
+      margin-top: 20px;
 
-	  .exchange-value {
-		font-size: 14px;
-		color: white;
-	  }
-	}
+      .main-news__container {
+        width: 610px;
+        float: left;
 
-	.logo-block {
-	  font-size: 1.75rem;
-	  color: white;
-	}
+        .main-news__header {
+          .header__title {
+            font-size: 2rem;
 
-	.search-block {
-	  text-transform: uppercase;
-	  text-align: right;
+            .text-link {
+              color: $text-links-color !important;
+            }
+          }
 
-	  .fa-search {
-		margin-left: 5px;
-		color: white;
-		width: 12px;
-		height: 12px;
-	  }
-	}
+          .header__date {
+            font-size: 0.75rem;
+            margin: 10px 0;
+            color: $text-grey-color;
+          }
 
-	.auth-block {
-	  text-transform: uppercase;
+          .main-news__view-info {
+            height: 30px;
+            padding: 5px 0;
+            border-bottom: 1px solid $content-border;
 
-	  .fa-user {
-		color: white;
-		margin-left: 5px;
-		font-size: 13px;
-	  }
-	}
-  }
-}
+            .fb-social-container {
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              margin-right: 40px;
 
-.header-low-wrapper {
-  width: 100%;
-  background-color: $header-top-wrapper-background;
-  height: 35px;
+              .fa-facebook-square {
+                width: 22px;
+                height: 22px;
+                color: $main-grey-link-color;
+              }
 
-  .header-low__container {
-	max-width: 968px;
-	margin: 0 auto;
-	font-size: 14px;
+              .fb-counter-container {
+                position: absolute;
+                width: 20px;
+                height: 19px;
+                top: 2px;
+                left: 25px;
+                background-color: $lighter-grey-color;
 
-	.low__nav {
-	  text-transform: uppercase;
-	  color: $header-top-link-color;
-	  list-style: none;
-	  line-height: 35px;
-	  letter-spacing: -0.5px;
+                .fb-counter {
+                  position: absolute;
+                  left: 7px;
+                  top: 4px;
+                  font-size: 0.6875rem;
+                  color: $main-grey-link-color;
+                }
+              }
 
-	  .nav__item {
-		display: block;
-		float: left;
-		padding: 0 8px;
-		border-right: #fcfcfc 1px solid;
-		border-left: #d1d1d1 1px solid;
+              .fb-counter-container:before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -4px;
+                border-style: solid;
+                border-color: transparent $lighter-grey-color transparent transparent;
+                border-width: 4px 5px 4px 0;
+              }
+            }
 
-		.nav__link {
-		  text-transform: uppercase;
-		  color: $header-top-link-color;
-		}
-	  }
+            .twttr-social-container {
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              margin-right: 40px;
 
-	  .nav__dropdown > .nav__link {
-		float: right;
-		color: $header-top-link-color !important;
-	  }
-	}
-  }
-}
+              .fa-twitter-square {
+                width: 22px;
+                height: 22px;
+                color: $main-grey-link-color;
+              }
 
-.header-sub-wrapper {
-  width: 100%;
-  height: 30px;
+              .twttr-counter-container {
+                position: absolute;
+                width: 20px;
+                height: 19px;
+                top: 2px;
+                left: 25px;
+                background-color: $lighter-grey-color;
 
-  .header-sub__container {
-	max-width: 968px;
-	margin: 0 auto;
-	font-size: 0.6875rem;
-	line-height: 30px;
-	text-transform: uppercase;
+                .twttr-counter {
+                  position: absolute;
+                  left: 4px;
+                  top: 4px;
+                  font-size: 0.6875rem;
+                  color: $main-grey-link-color;
+                }
+              }
 
-	.sub__all-news {
-	  color: $header-top-link_active;
-	  margin-left: 8px;
-	}
+              .twttr-counter-container:before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -4px;
+                border-style: solid;
+                border-color: transparent $lighter-grey-color transparent transparent;
+                border-width: 4px 5px 4px 0;
+              }
+            }
 
-	.sub__fav-news {
-	  color: $header-top-link-color;
-	  margin-left: 10px;
-	}
+            .translate-to-ua {
+              display: inline-block;
+              vertical-align: middle;
+              text-transform: uppercase;
+              color: $main-red-link-color;
+              font-size: 0.8125rem;
+            }
+
+            .views-counter {
+              display: inline-block;
+              vertical-align: middle;
+              color: $text-grey-color;
+              float: right;
+              margin-left: 15px;
+
+              .fa-eye {
+                width: 15px;
+                height: 14px;
+              }
+
+              .view-counter {
+                font-size: 0.6875rem;
+              }
+            }
+
+            .comments-counter {
+              display: inline-block;
+              vertical-align: middle;
+              color: $text-grey-color;
+              float: right;
+              margin-left: 15px;
+
+              .fa-comment-alt {
+                width: 15px;
+                height: 14px;
+              }
+
+              .comm-counter {
+                font-size: 0.6875rem;
+              }
+            }
+          }
+        }
+      }
+
+      .img-block {
+        .main-photo {
+          margin: 20px 0;
+          width: 610px;
+          height: 385px;
+        }
+      }
+
+      .news-block {
+        .news-subtitle {
+          font-size: 1.3125rem;
+          line-height: 24px;
+          font-weight: 500;
+        }
+
+        .news-text {
+          font-size: 0.9375rem;
+          line-height: 18px;
+          font-weight: 300;
+          padding: 10px 0;
+        }
+
+        .text-link {
+          color: $text-links-color;
+        }
+
+        .news-photo {
+          width: 610px;
+          height: 450px;
+        }
+
+        .news-how-to {
+          text-align: center;
+          font-size: 0.9375rem;
+          line-height: 18px;
+          font-weight: 300;
+
+          .how-to-list {
+            list-style: none;
+
+            .list-item {
+              padding: 5px 0;
+            }
+          }
+
+          .submit-button {
+            display: block;
+            width: 100%;
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid black;
+            color: black;
+            font-weight: 600;
+            margin: 5px 0;
+          }
+        }
+
+        .tags-container {
+          height: 15px;
+
+          .tags-block {
+            display: flex;
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            margin: 10px 0;
+
+            .tags-link {
+              margin-left: 5px;
+              color: $text-grey-color !important;
+
+            }
+          }
+
+          .error-text {
+            width: 100%;
+            font-size: 0.6875rem;
+            color: $text-grey-color !important;
+            margin: 10px 0;
+          }
+
+        }
+      }
+
+      .some-news__wrapper {
+        width: 100%;
+        height: 20px;
+        border-bottom: 3px solid $text-links-color;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+
+        .some-news-link {
+          color: $text-links-color !important;
+        }
+      }
+
+      .aside-news__container {
+        width: 300px;
+        float: right;
+      }
+    }
   }
 }
