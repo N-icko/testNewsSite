@@ -244,6 +244,7 @@ header {
     }
 
     .main-news {
+      height: 2717px;
       margin-top: 20px;
 
       .main-news__container {
@@ -255,14 +256,14 @@ header {
             font-size: 2rem;
 
             .text-link {
-              color: $text-links-color !important;
+              color: $red-links-color !important;
             }
           }
 
           .header__date {
             font-size: 0.75rem;
             margin: 10px 0;
-            color: $text-grey-color;
+            color: $grey-text-color;
           }
 
           .main-news__view-info {
@@ -288,7 +289,7 @@ header {
                 height: 19px;
                 top: 2px;
                 left: 25px;
-                background-color: $lighter-grey-color;
+                background-color: $grey-lighter-color;
 
                 .fb-counter {
                   position: absolute;
@@ -305,7 +306,7 @@ header {
                 top: 6px;
                 left: -4px;
                 border-style: solid;
-                border-color: transparent $lighter-grey-color transparent transparent;
+                border-color: transparent $grey-lighter-color transparent transparent;
                 border-width: 4px 5px 4px 0;
               }
             }
@@ -328,7 +329,7 @@ header {
                 height: 19px;
                 top: 2px;
                 left: 25px;
-                background-color: $lighter-grey-color;
+                background-color: $grey-lighter-color;
 
                 .twttr-counter {
                   position: absolute;
@@ -345,7 +346,7 @@ header {
                 top: 6px;
                 left: -4px;
                 border-style: solid;
-                border-color: transparent $lighter-grey-color transparent transparent;
+                border-color: transparent $grey-lighter-color transparent transparent;
                 border-width: 4px 5px 4px 0;
               }
             }
@@ -361,7 +362,7 @@ header {
             .views-counter {
               display: inline-block;
               vertical-align: middle;
-              color: $text-grey-color;
+              color: $grey-text-color;
               float: right;
               margin-left: 15px;
 
@@ -378,7 +379,7 @@ header {
             .comments-counter {
               display: inline-block;
               vertical-align: middle;
-              color: $text-grey-color;
+              color: $grey-text-color;
               float: right;
               margin-left: 15px;
 
@@ -417,7 +418,7 @@ header {
           }
 
           .text-link {
-            color: $text-links-color;
+            color: $red-links-color;
           }
 
           .news-photo {
@@ -462,7 +463,7 @@ header {
 
               .tags-link {
                 margin-left: 5px;
-                color: $text-grey-color !important;
+                color: $grey-text-color !important;
 
               }
             }
@@ -470,7 +471,7 @@ header {
             .error-text {
               width: 100%;
               font-size: 0.6875rem;
-              color: $text-grey-color !important;
+              color: $grey-text-color !important;
               margin: 10px 0;
             }
 
@@ -480,12 +481,12 @@ header {
         .some-news__wrapper {
           width: 100%;
           height: 20px;
-          border-bottom: 3px solid $text-links-color;
+          border-bottom: 3px solid $red-links-color;
           text-transform: uppercase;
           font-size: 0.875rem;
 
           .some-news-link {
-            color: $text-links-color !important;
+            color: $red-links-color !important;
           }
         }
       }
@@ -503,7 +504,6 @@ header {
           .aside-header-link {
             @include aside-header-link-style;
           }
-
         }
 
         .city-news__sub-header {
@@ -513,15 +513,14 @@ header {
             margin: 10px 15px 10px 0;
             text-transform: uppercase;
             font-size: 0.6875rem;
-            color: $text-grey-color;
+            color: $grey-text-color;
           }
         }
 
         .city-news__content-container {
-          margin-top: 10px;
           border-top: 1px solid $grey-border-color;
           border-bottom: 1px solid $grey-border-color;
-          padding: 25px 0;
+          padding: 10px 0;
           font-size: 0.8125rem;
 
           .ranked-news {
@@ -682,6 +681,15 @@ header {
               margin-top: 5px;
               color: $grey-link-color;
               font-size: 0.8125rem;
+
+              .item-icons {
+                .fa-youtube, .fa-camera {
+                  font-size: 0.8125rem;
+                  fill: $grey-text-color;
+                }
+              }
+
+
               .author-post {
                 display: inline-block;
                 font-weight: normal;
@@ -696,8 +704,82 @@ header {
                 font-family: "Sans-Condense_Bold", Arial, sans-serif;
               }
             }
+
+          }
+
+          .item-info {
+            margin-top: 5px;
+            font-size: 0.6875rem;
+            font-weight: normal;
+
+            .info-link {
+              font-size: 0.6875rem;
+              color: $red-links-color;
+            }
+
+            .info-link-date {
+              color: $grey-text-color;
+            }
           }
         }
+
+        .choice-item-border {
+          padding: 10px 0;
+          border-top: 1px solid $grey-border-color;
+          border-bottom: 1px solid $grey-border-color;
+
+        }
+      }
+
+      .social-links__container {
+        margin-top: 25px;
+        .social-links__header {
+          @include aside-header-style;
+
+          .header-link {
+            @include aside-header-link-style;
+            font-size: 0.750rem;
+          }
+        }
+
+        .social-links__sub-header {
+          .sub-header-links {
+            text-transform: uppercase;
+            font-size: 0.6875rem;
+            color: $grey-link-color;
+          }
+        }
+
+        .social-links__API-block {
+          margin-top: 25px;
+          height: 50px;
+          padding: 10px 0;
+          border-top: 1px solid $grey-border-color;
+          border-bottom: 1px solid $grey-border-color;
+          line-height: 50px;
+          text-align: center;
+            .api-links {
+              color: $grey-link-color;
+              line-height: 16px;
+              text-align: center;
+            }
+        }
+      }
+    }
+
+    .comments__container {
+      margin-top: 25px;
+      width: 610px;
+      text-transform: uppercase;
+      color: $red-links-color;
+      border-bottom: 3px solid $red-links-color;
+
+      .comments-block {
+        height: 500px;
+        .user-avatar__container {
+
+        }
+
       }
     }
   }

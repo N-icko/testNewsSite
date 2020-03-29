@@ -3,12 +3,12 @@
 @mixin aside-header-style {
   width: 100%;
   height: 25px;
-  border-bottom: 3px solid $text-links-color;
+  border-bottom: 3px solid $red-links-color;
 
 }
 
 @mixin aside-header-link-style {
   text-transform: uppercase;
-  color: $text-links-color;
+  color: $red-links-color;
   font-size: 0.875rem;
 }
