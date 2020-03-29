@@ -733,6 +733,7 @@ header {
 
       .social-links__container {
         margin-top: 25px;
+
         .social-links__header {
           @include aside-header-style;
 
@@ -758,27 +759,27 @@ header {
           border-bottom: 1px solid $grey-border-color;
           line-height: 50px;
           text-align: center;
-            .api-links {
-              color: $grey-link-color;
-              line-height: 16px;
-              text-align: center;
-            }
+
+          .api-links {
+            color: $grey-link-color;
+            line-height: 16px;
+            text-align: center;
+          }
         }
       }
     }
 
-    .comments__container {
+    .comments__separator {
       margin-top: 25px;
+      height: 25px;
+      font-size: 0.875rem;
       width: 610px;
       text-transform: uppercase;
       color: $red-links-color;
       border-bottom: 3px solid $red-links-color;
 
       .comments-block {
-        height: 500px;
-        .user-avatar__container {
-
-        }
+        margin-top: 20px;
 
       }
     }
