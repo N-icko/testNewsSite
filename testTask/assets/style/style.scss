@@ -575,22 +575,113 @@ header {
         }
 
         .plot-items {
-          margin-top: 20px;
+          margin-top: 10px;
+          height: 50px;
+          border-bottom: 1px solid $grey-border-color;
 
           .plot-item__img {
             height: 43px;
             width: 67px;
             float: left;
+            display: inline-block;
           }
 
-          .plot-item__text {
+          .plot-item__container {
+            display: inline-block;
             float: right;
+            height: 43px;
+            width: 225px;
+
+            .plot-item__text {
+              font-weight: normal;
+              font-size: 0.8125rem;
+              float: right;
+              color: $black-link-color;
+            }
+          }
+        }
+      }
+
+      .choice__container {
+        margin-top: 20px;
+
+        .choice__header {
+          @include aside-header-style;
+
+          .header-link {
+            @include aside-header-link-style;
+            float: left;
+
+          }
+
+          .right-arrow__container {
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            background-color: $grey-arrow;
+            float: right;
+            position: relative;
+            cursor: pointer;
+            margin-left: 5px;
+
+            .right-arrow {
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-bottom: 3px solid white;
+              border-right: 3px solid white;
+              top: 5px;
+              left: 3px;
+              transform: rotate(-45deg);
+            }
+          }
+
+          .left-arrow__container {
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            background-color: $grey-arrow;
+            float: right;
+            position: relative;
+            cursor: pointer;
+
+            .left-arrow {
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-bottom: 3px solid white;
+              border-right: 3px solid white;
+              top: 5px;
+              left: 2px;
+              transform: rotate(135deg);
+              margin-left: 5px;
+            }
+          }
+
+          .header-count {
+            float: right;
+            margin-right: 5px;
+
+            .count-item {
+              font-size: 0.6875rem;
+              color: $grey-link-color;
+            }
+          }
+        }
+
+        .choice__item {
+          margin-top: 12px;
+
+          .choice__item-img {
+            height: 155px;
+            width: 300px;
           }
         }
       }
     }
   }
 }
+
 
 
 
