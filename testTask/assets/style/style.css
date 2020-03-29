@@ -565,5 +565,23 @@ header .header-sub-wrapper .header-sub__container .sub__fav-news {
   height: 155px;
   width: 300px;
 }
+.content-wrapper .content-container .aside-news__wrapper .choice__container .choice__item .item-title .item-title__link {
+  margin-top: 5px;
+  color: #6e6e6e;
+  font-size: 0.8125rem;
+}
+.content-wrapper .content-container .aside-news__wrapper .choice__container .choice__item .item-title .item-title__link .author-post {
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  background: #f60;
+  color: #fff;
+  padding: 2px 4px;
+  margin-right: 4px;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-family: "Sans-Condense_Bold", Arial, sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -676,6 +676,27 @@ header {
             height: 155px;
             width: 300px;
           }
+
+          .item-title {
+            .item-title__link {
+              margin-top: 5px;
+              color: $grey-link-color;
+              font-size: 0.8125rem;
+              .author-post {
+                display: inline-block;
+                font-weight: normal;
+                font-style: normal;
+                background: #f60;
+                color: #fff;
+                padding: 2px 4px;
+                margin-right: 4px;
+                font-size: 10px;
+                line-height: 10px;
+                text-transform: uppercase;
+                font-family: "Sans-Condense_Bold", Arial, sans-serif;
+              }
+            }
+          }
         }
       }
     }
