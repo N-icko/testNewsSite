@@ -21,6 +21,7 @@ body {
 header .header-top-wrapper {
   width: 100%;
   background-color: #eeeeee;
+  overflow: hidden;
 }
 header .header-top-wrapper .header__header-top-nav {
   height: 30px;
@@ -50,6 +51,7 @@ header .header-mid-wrapper {
   width: 100%;
   background-color: #c60304;
   height: 70px;
+  overflow: hidden;
 }
 header .header-mid-wrapper .header-mid__container {
   max-width: 968px;
@@ -111,6 +113,7 @@ header .header-mid-wrapper .header-mid__container .auth-block .fa-user {
   font-size: 13px;
 }
 header .header-low-wrapper {
+  overflow: hidden;
   width: 100%;
   background-color: #eeeeee;
   height: 35px;
@@ -120,8 +123,10 @@ header .header-low-wrapper .header-low__container {
   min-width: 917px;
   margin: 0 auto;
   font-size: 14px;
+  overflow: hidden;
 }
 header .header-low-wrapper .header-low__container .low__nav {
+  overflow: hidden;
   text-transform: uppercase;
   color: #6e6e6e;
   list-style: none;
@@ -688,6 +693,43 @@ header .header-sub-wrapper .header-sub__container .sub__fav-news {
   font-size: 0.625rem;
   font-weight: lighter;
   color: #6e6e6e;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+  header > .header-top-wrapper > .header__header-top-nav {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  header > .header-mid-wrapper > .header-mid__container {
+    max-width: 700px !important;
+    font-size: 60% !important;
+  }
+
+  header .header-low-wrapper .header-low__container {
+    max-width: 700px !important;
+    min-width: 0;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+  header .header-sub-wrapper .header-sub__container {
+    max-width: 710px !important;
+  }
+
+  .content-wrapper .content-container {
+    max-width: 650px !important;
+  }
+  .content-wrapper .content-container .special-news {
+    max-width: 700px !important;
+    margin: 0 auto;
+  }
+  .content-wrapper .content-container .main-news .main-news__container {
+    width: 590px;
+    margin: 10px auto;
+  }
+  .content-wrapper .content-container .main-news .aside-news__wrapper {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

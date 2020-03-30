@@ -22,6 +22,7 @@ header {
   .header-top-wrapper {
     width: 100%;
     background-color: $header-top-wrapper-background;
+    overflow: hidden;
 
     .header__header-top-nav {
       height: 30px;
@@ -57,6 +58,8 @@ header {
     width: 100%;
     background-color: $header-mid-wrapper-background;
     height: 70px;
+    overflow: hidden;
+
 
     .header-mid__container {
       max-width: 968px;
@@ -139,6 +142,8 @@ header {
   }
 
   .header-low-wrapper {
+    overflow: hidden;
+
     width: 100%;
     background-color: $header-top-wrapper-background;
     height: 35px;
@@ -148,8 +153,11 @@ header {
       min-width: 917px;
       margin: 0 auto;
       font-size: 14px;
+      overflow: hidden;
+
 
       .low__nav {
+        overflow: hidden;
         text-transform: uppercase;
         color: $main-grey-link-color;
         list-style: none;
@@ -836,3 +844,68 @@ header {
   }
 }
 
+
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+
+  header > .header-top-wrapper > .header__header-top-nav {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  header > .header-mid-wrapper > .header-mid__container {
+    max-width: 700px !important;
+    font-size: 60% !important;
+  }
+
+  header {
+    .header-low-wrapper {
+      .header-low__container {
+        max-width: 700px !important;
+        min-width: 0;
+        font-size: 10px;
+        margin: 0 auto;
+      }
+    }
+
+    .header-sub-wrapper {
+      .header-sub__container {
+        max-width: 710px !important;
+      }
+    }
+  }
+
+  .content-wrapper {
+
+    .content-container {
+      max-width: 650px !important;
+
+      .special-news {
+        max-width: 700px !important;
+        margin: 0 auto;
+      }
+      .main-news {
+        .main-news__container {
+          width: 590px;
+          margin: 10px auto;
+        }
+        .aside-news__wrapper {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
+}
