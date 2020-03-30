@@ -200,7 +200,7 @@ header .header-sub-wrapper .header-sub__container .sub__fav-news {
   color: #6e6e6e;
 }
 .content-wrapper .content-container .main-news {
-  height: 2717px;
+  overflow: hidden;
   margin-top: 20px;
 }
 .content-wrapper .content-container .main-news .main-news__container {
@@ -637,7 +637,7 @@ header .header-sub-wrapper .header-sub__container .sub__fav-news {
   line-height: 16px;
   text-align: center;
 }
-.content-wrapper .content-container .comments__separator {
+.content-wrapper .content-container .comments .comments__separator {
   margin-top: 25px;
   height: 25px;
   font-size: 0.875rem;
@@ -646,8 +646,47 @@ header .header-sub-wrapper .header-sub__container .sub__fav-news {
   color: #c60304;
   border-bottom: 3px solid #c60304;
 }
-.content-wrapper .content-container .comments__separator .comments-block {
+.content-wrapper .content-container .comments .comments-container {
   margin-top: 20px;
+  width: 610px;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item {
+  margin-top: 5px;
+  overflow: hidden;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-id__container {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-id__container .user-photo {
+  width: 75px;
+  height: 75px;
+  border-radius: 10%;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-content .user-name {
+  font-size: 0.875rem;
+  color: black;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-content .comment-text {
+  width: 80%;
+  float: right;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  margin-top: 5px;
+  text-align: justify;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-content .comment-text .comment-link {
+  color: #c60304;
+}
+.content-wrapper .content-container .comments .comments-container .comment-item .comment-content .comment-date {
+  width: 80%;
+  float: right;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 0.625rem;
+  font-weight: lighter;
+  color: #6e6e6e;
 }
 
 /*# sourceMappingURL=style.css.map */
