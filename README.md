@@ -1,3 +1,3 @@
 # News Site Markup
-<p>Test task. Simple markup of news site from a maket. | Тестовое задание. Простая вёрстка новостного сайта по макету.</p>
-<p>Using stack | Использованные технологии: HTML5, SCSS, JavaScript/jQuery.</p>
+<p>Test task. Simple markup of news site from a maket.</p>
+<p>Technology stack: HTML5, SCSS, JavaScript/jQuery.</p>
