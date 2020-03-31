@@ -19,12 +19,12 @@ body {
 }
 
 header {
-  .header-top-wrapper {
+  .header__top-wrapper {
     width: 100%;
     background-color: $header-top-wrapper-background;
     overflow: hidden;
 
-    .header__header-top-nav {
+    .header__top-nav {
       height: 30px;
       max-width: 968px;
       display: flex;
@@ -32,16 +32,16 @@ header {
       justify-content: space-between;
       margin: 0 auto;
 
-      .header-top-nav__list {
+      .top-nav__list {
         list-style: none;
         display: flex;
 
-        .header-top-nav__list-item {
+        .top-nav__list-item {
           margin-right: 15px;
           text-transform: uppercase;
           font-size: 0.75rem;
 
-          .header-top-nav__list-item-link {
+          .top-nav__list-item-link {
             text-decoration: none;
             color: $main-grey-link-color;
           }
@@ -54,14 +54,14 @@ header {
     }
   }
 
-  .header-mid-wrapper {
+  .header__mid-wrapper {
     width: 100%;
     background-color: $header-mid-wrapper-background;
     height: 70px;
     overflow: hidden;
 
 
-    .header-mid__container {
+    .header__mid-container {
       max-width: 968px;
       height: 70px;
       margin: 0 auto;
@@ -141,14 +141,13 @@ header {
     }
   }
 
-  .header-low-wrapper {
+  .header__low-wrapper {
     overflow: hidden;
-
     width: 100%;
     background-color: $header-top-wrapper-background;
     height: 35px;
 
-    .header-low__container {
+    .header__low-container {
       max-width: 968px;
       min-width: 917px;
       margin: 0 auto;
@@ -185,11 +184,11 @@ header {
     }
   }
 
-  .header-sub-wrapper {
+  .header__sub-wrapper {
     width: 100%;
     height: 30px;
 
-    .header-sub__container {
+    .header__sub-container {
       max-width: 968px;
       margin: 0 auto;
       font-size: 0.6875rem;
@@ -845,21 +844,21 @@ header {
 }
 
 
-@media (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  header > .header-top-wrapper > .header__header-top-nav {
-    max-width: 550px;
+  header > .header__top-wrapper > .header__top-nav {
+    max-width: 700px;
     margin: 0 auto;
   }
 
-  header > .header-mid-wrapper > .header-mid__container {
+  header > .header__mid-wrapper > .header__mid-container {
     max-width: 700px !important;
     font-size: 60% !important;
   }
 
   header {
-    .header-low-wrapper {
-      .header-low__container {
+    .header__low-wrapper {
+      .header__low-container {
         max-width: 700px !important;
         min-width: 0;
         font-size: 10px;
@@ -867,8 +866,8 @@ header {
       }
     }
 
-    .header-sub-wrapper {
-      .header-sub__container {
+    .header__sub-wrapper {
+      .header__sub-container {
         max-width: 710px !important;
       }
     }
@@ -883,11 +882,13 @@ header {
         max-width: 700px !important;
         margin: 0 auto;
       }
+
       .main-news {
         .main-news__container {
           width: 590px;
           margin: 10px auto;
         }
+
         .aside-news__wrapper {
           display: none;
         }
