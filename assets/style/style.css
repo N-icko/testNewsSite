@@ -18,6 +18,9 @@ body {
   font-weight: Bold;
 }
 
+header {
+  position: relative;
+}
 header .header__top-wrapper {
   width: 100%;
   background-color: #eeeeee;
@@ -103,6 +106,31 @@ header .header__mid-wrapper .header__mid-container .search-block .fa-search {
   color: white;
   width: 12px;
   height: 12px;
+}
+header .header__mid-wrapper .header__mid-container .search-block .search-block_active {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow: hidden;
+  top: 80px;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: auto;
+  background-color: #fff;
+}
+header .header__mid-wrapper .header__mid-container .search-block .search-block_active .search-button {
+  border: 1px solid #d9d9d9;
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: none;
+  width: 20%;
+  height: 100%;
+  color: black;
+}
+header .header__mid-wrapper .header__mid-container .search-block .search-block_active #search-input {
+  width: 80%;
 }
 header .header__mid-wrapper .header__mid-container .auth-block {
   text-transform: uppercase;

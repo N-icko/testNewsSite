@@ -19,6 +19,8 @@ body {
 }
 
 header {
+  position: relative;
+
   .header__top-wrapper {
     width: 100%;
     background-color: $header-top-wrapper-background;
@@ -121,12 +123,44 @@ header {
         text-transform: uppercase;
         text-align: right;
 
+
         .fa-search {
           margin-left: 5px;
           color: white;
           width: 12px;
           height: 12px;
         }
+
+        .search-block_active {
+          position: absolute;
+          display: none;
+          box-sizing: border-box;
+          padding: 5px;
+          overflow: hidden;
+          top: 80px;
+          width: 250px;
+          height: 50px;
+          line-height: 50px;
+          margin-right: auto;
+          background-color: #fff;
+
+          .search-button {
+            border: 1px solid $grey-border-color;
+            font-size: 12px;
+            font-weight: lighter;
+            text-transform: none;
+            width: 20%;
+            height: 100%;
+            color: black;
+          }
+
+          #search-input {
+            width: 80%;
+          }
+
+        }
+
+
       }
 
       .auth-block {
@@ -929,6 +963,7 @@ header {
           .comments__separator {
             width: 100%;
           }
+
           .comments-container {
             width: 100%;
           }
@@ -1049,6 +1084,7 @@ header {
 
             .comment-item {
               margin: 25px 0;
+
               .comment-id__container {
                 width: 100px !important;
                 height: 75px;
@@ -1063,10 +1099,12 @@ header {
                 .user-name {
                   margin-left: 85px;
                 }
+
                 .comment-text {
                   width: 100%;
                   float: none;
                 }
+
                 .comment-date {
                   width: 100%;
                   float: none;
