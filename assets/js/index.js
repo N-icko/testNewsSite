@@ -1,7 +1,3 @@
-//Изменение цвета активной ссылки:
-$('.top-nav__list-item-link').click(function () {
-	$(this).toggleClass("active-header-link");
-});
-
-$('.weather__city').click(function () {
+$('.search__button ').click(function () {
+	alert('Ты кликнул!')
 });

@@ -177,9 +177,7 @@ header {
 
         .nav__dropdown > .nav__link {
           float: right;
-          border-left: #d1d1d1 1px solid;
           color: $main-grey-link-color !important;
-          border-right: #fcfcfc 1px solid;
         }
       }
     }
@@ -780,6 +778,8 @@ header {
     }
 
     .comments {
+      overflow: hidden;
+
       .comments__separator {
         margin-top: 25px;
         height: 25px;
@@ -852,8 +852,7 @@ header {
     header {
       .header__top-wrapper {
         .header__top-nav {
-          max-width: 1000px;
-          min-width: 710px;
+          width: 90%;
         }
       }
 
@@ -861,16 +860,14 @@ header {
         font-size: 70%;
 
         .header__mid-container {
-          max-width: 1000px;
-          min-width: 710px;
+          width: 90%;
         }
       }
 
       .header__low-wrapper {
         .header__low-container {
           font-size: 60%;
-          max-width: 1000px;
-          min-width: 710px;
+          width: 90%;
 
 
           .low__nav {
@@ -889,29 +886,29 @@ header {
 
       .header__sub-wrapper {
         .header__sub-container {
-          max-width: 1000px;
-          min-width: 710px;
+          width: 90%;
         }
       }
     }
 
     .content-wrapper {
       .content-container {
-        width: 710px;
+        width: 90% !important;
 
         .special-news {
-          width: 710px;
+          width: 90%;
         }
 
         .main-news {
           .main-news__container {
-            width: 710px;
+            width: 90%;
             float: none;
             margin: 0 auto;
 
             .img-block {
               .main-photo {
-                width: 710px;
+                width: 100%;
+                height: 75%;
               }
             }
 
@@ -925,6 +922,15 @@ header {
 
           .aside-news__wrapper {
             display: none;
+          }
+        }
+
+        .comments {
+          .comments__separator {
+            width: 100%;
+          }
+          .comments-container {
+            width: 100%;
           }
         }
       }
@@ -945,7 +951,7 @@ header {
 
       .header__mid-wrapper {
         .header__mid-container {
-          width: 300px;
+          width: 90%;
           line-height: 70px;
           display: block;
           margin: 0 auto;
@@ -976,26 +982,20 @@ header {
       }
 
       .header__sub-wrapper {
-        margin-top: 10px;
+        display: none;
       }
     }
 
     .content-wrapper {
       .content-container {
         .special-news {
-          width: 300px;
-          margin: 0 auto;
-
-          .special-news__container, .special-news__dropdown {
-            font-size: 60%;
-
-          }
+          display: none
         }
 
         .main-news {
           .main-news__container {
             float: none;
-            width: 300px;
+            width: 90%;
             margin: 0 auto;
 
             .main-news__header {
@@ -1014,8 +1014,8 @@ header {
 
             .img-block {
               .main-photo {
-                width: 300px;
-                height: 200px;
+                width: 100%;
+                height: 75%;
               }
             }
 
@@ -1023,8 +1023,54 @@ header {
               text-align: justify;
 
               .news-photo {
-                width: 300px;
-                height: 140px;
+                width: 100%;
+                height: 50%;
+              }
+            }
+          }
+        }
+
+        .aside-news__wrapper {
+          display: none;
+        }
+
+        .comments {
+          margin-top: 15px;
+
+          .comments__separator {
+            width: 90%;
+            margin: 0 auto;
+          }
+
+          .comments-container {
+            width: 90%;
+            margin: 0 auto;
+
+
+            .comment-item {
+              margin: 25px 0;
+              .comment-id__container {
+                width: 100px !important;
+                height: 75px;
+
+                .user-photo {
+                  width: 75px;
+                  height: 75px;
+                }
+              }
+
+              .comment-content {
+                .user-name {
+                  margin-left: 85px;
+                }
+                .comment-text {
+                  width: 100%;
+                  float: none;
+                }
+                .comment-date {
+                  width: 100%;
+                  float: none;
+                }
               }
             }
           }
@@ -1032,11 +1078,4 @@ header {
       }
     }
   }
-
-}
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-
 }
